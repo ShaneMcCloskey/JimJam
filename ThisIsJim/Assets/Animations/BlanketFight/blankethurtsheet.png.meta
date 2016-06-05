@@ -1,0 +1,383 @@
+fileFormatVersion: 2
+guid: 786ff3f10f83dc0459a51586d7ae4cf8
+timeCreated: 1460221862
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blankethurt_frame1
+    21300002: blankethurt_frame2
+    21300004: blankethurt_frame3
+    21300006: blankethurt_frame4
+    21300008: blankethurt_frame5
+    21300010: blankethurt_frame6
+    21300012: blankethurt_frame7
+    21300014: blankethurt_frame8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: blankethurt_frame1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1696
+        width: 391
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 195.5, y: 39}
+        - {x: 195.5, y: 72}
+        - {x: 194.5, y: 76}
+        - {x: 139.5, y: 104}
+        - {x: 68.5, y: 126}
+        - {x: -22.5, y: 126}
+        - {x: -44.5, y: 119}
+        - {x: -108.5, y: 85}
+        - {x: -125.5, y: 75}
+        - {x: -175.5, y: 24}
+        - {x: -187.5, y: 1}
+        - {x: -195.5, y: -15}
+        - {x: -195.5, y: -22}
+        - {x: -159.5, y: -37}
+        - {x: -78.5, y: -56}
+        - {x: -12.5, y: -95}
+        - {x: 8.5, y: -84}
+        - {x: 26.5, y: -76}
+        - {x: 97.5, y: -109}
+        - {x: 134.5, y: -126}
+        - {x: 160.5, y: -126}
+        - {x: 161.5, y: -121}
+        - {x: 142.5, y: -68}
+        - {x: 174.5, y: 5}
+    - name: blankethurt_frame2
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1648
+        width: 328
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 127, y: 17.5}
+        - {x: 164, y: 57.5}
+        - {x: 164, y: 95.5}
+        - {x: 153, y: 109.5}
+        - {x: 90, y: 141.5}
+        - {x: 39, y: 155.5}
+        - {x: -37, y: 155.5}
+        - {x: -73, y: 149.5}
+        - {x: -105, y: 139.5}
+        - {x: -164, y: 103.5}
+        - {x: -164, y: 88.5}
+        - {x: -163, y: 87.5}
+        - {x: -73, y: 72.5}
+        - {x: -114, y: 41.5}
+        - {x: -144, y: -14.5}
+        - {x: -135, y: -62.5}
+        - {x: -77, y: -73.5}
+        - {x: -5, y: -99.5}
+        - {x: 85, y: -155.5}
+        - {x: 109, y: -155.5}
+        - {x: 112, y: -144.5}
+        - {x: 85, y: -68.5}
+        - {x: 98, y: -2.5}
+    - name: blankethurt_frame3
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1635
+        width: 273
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 121.5, y: 18.5}
+        - {x: 136.5, y: 49.5}
+        - {x: 136.5, y: 88.5}
+        - {x: 117.5, y: 116.5}
+        - {x: 59.5, y: 149.5}
+        - {x: 7.5, y: 163.5}
+        - {x: -63.5, y: 163.5}
+        - {x: -91.5, y: 157.5}
+        - {x: -117.5, y: 137.5}
+        - {x: -111.5, y: 128.5}
+        - {x: -44.5, y: 119.5}
+        - {x: -113.5, y: 49.5}
+        - {x: -125.5, y: 25.5}
+        - {x: -136.5, y: 0.5}
+        - {x: -136.5, y: -70.5}
+        - {x: -120.5, y: -84.5}
+        - {x: -33.5, y: -132.5}
+        - {x: 22.5, y: -151.5}
+        - {x: 43.5, y: -160.5}
+        - {x: 74.5, y: -163.5}
+        - {x: 107.5, y: -163.5}
+        - {x: 106.5, y: -154.5}
+        - {x: 78.5, y: -82.5}
+        - {x: 94.5, y: -13.5}
+    - name: blankethurt_frame4
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1610
+        width: 282
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 89, y: -6.5}
+        - {x: 126, y: 25.5}
+        - {x: 141, y: 55.5}
+        - {x: 141, y: 100.5}
+        - {x: 140, y: 107.5}
+        - {x: 100, y: 132.5}
+        - {x: 46, y: 159.5}
+        - {x: 7, y: 177.5}
+        - {x: -25, y: 184.5}
+        - {x: -98, y: 184.5}
+        - {x: -105, y: 172.5}
+        - {x: -84, y: 150.5}
+        - {x: -73, y: 125.5}
+        - {x: -80, y: 89.5}
+        - {x: -115, y: 49.5}
+        - {x: -133, y: 20.5}
+        - {x: -138, y: 3.5}
+        - {x: -141, y: -10.5}
+        - {x: -141, y: -64.5}
+        - {x: -132, y: -96.5}
+        - {x: -123, y: -111.5}
+        - {x: -97, y: -131.5}
+        - {x: -48, y: -155.5}
+        - {x: 15, y: -176.5}
+        - {x: 63, y: -184.5}
+        - {x: 127, y: -184.5}
+        - {x: 133, y: -172.5}
+        - {x: 88, y: -106.5}
+        - {x: 75, y: -66.5}
+    - name: blankethurt_frame5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1599
+        width: 339
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76.5, y: -67.5}
+        - {x: 71.5, y: -22.5}
+        - {x: 131.5, y: 34.5}
+        - {x: 159.5, y: 60.5}
+        - {x: 169.5, y: 81.5}
+        - {x: 169.5, y: 99.5}
+        - {x: 162.5, y: 107.5}
+        - {x: 136.5, y: 124.5}
+        - {x: 91.5, y: 155.5}
+        - {x: 59.5, y: 174.5}
+        - {x: 21.5, y: 188.5}
+        - {x: -5.5, y: 193.5}
+        - {x: -46.5, y: 193.5}
+        - {x: -55.5, y: 187.5}
+        - {x: -63.5, y: 156.5}
+        - {x: -130.5, y: 100.5}
+        - {x: -149.5, y: 81.5}
+        - {x: -167.5, y: 43.5}
+        - {x: -169.5, y: 29.5}
+        - {x: -169.5, y: -16.5}
+        - {x: -161.5, y: -41.5}
+        - {x: -148.5, y: -63.5}
+        - {x: -123.5, y: -102.5}
+        - {x: -119.5, y: -128.5}
+        - {x: -110.5, y: -137.5}
+        - {x: -58.5, y: -160.5}
+        - {x: 8.5, y: -181.5}
+        - {x: 81.5, y: -190.5}
+        - {x: 91.5, y: -193.5}
+        - {x: 122.5, y: -193.5}
+        - {x: 127.5, y: -191.5}
+        - {x: 126.5, y: -176.5}
+        - {x: 122.5, y: -143.5}
+        - {x: 110.5, y: -118.5}
+    - name: blankethurt_frame6
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1172
+        width: 304
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 117, y: -95}
+        - {x: 108, y: -72}
+        - {x: 92, y: -23}
+        - {x: 88, y: 5}
+        - {x: 119, y: 65}
+        - {x: 140, y: 87}
+        - {x: 151, y: 102}
+        - {x: 152, y: 108}
+        - {x: 152, y: 123}
+        - {x: 128, y: 140}
+        - {x: 90, y: 161}
+        - {x: 50, y: 181}
+        - {x: 28, y: 187}
+        - {x: -4, y: 195}
+        - {x: -59, y: 195}
+        - {x: -112, y: 144}
+        - {x: -134, y: 118}
+        - {x: -141, y: 108}
+        - {x: -152, y: 82}
+        - {x: -152, y: 16}
+        - {x: -125, y: -55}
+        - {x: -126, y: -98}
+        - {x: -130, y: -109}
+        - {x: -129, y: -121}
+        - {x: -88, y: -147}
+        - {x: -66, y: -156}
+        - {x: -52, y: -163}
+        - {x: -7, y: -179}
+        - {x: 79, y: -195}
+        - {x: 107, y: -195}
+        - {x: 119, y: -173}
+        - {x: 123, y: -151}
+        - {x: 123, y: -112}
+    - name: blankethurt_frame7
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1181
+        width: 290
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 117, y: -85}
+        - {x: 117, y: -57}
+        - {x: 114, y: -37}
+        - {x: 99, y: 1}
+        - {x: 97, y: 33}
+        - {x: 104, y: 65}
+        - {x: 135, y: 99}
+        - {x: 144, y: 100}
+        - {x: 145, y: 102}
+        - {x: 145, y: 123}
+        - {x: 106, y: 148}
+        - {x: 41, y: 180}
+        - {x: -5, y: 188}
+        - {x: -64, y: 188}
+        - {x: -68, y: 187}
+        - {x: -99, y: 169}
+        - {x: -120, y: 149}
+        - {x: -144, y: 106}
+        - {x: -145, y: 102}
+        - {x: -145, y: 43}
+        - {x: -132, y: 7}
+        - {x: -121, y: -33}
+        - {x: -121, y: -63}
+        - {x: -141, y: -117}
+        - {x: -126, y: -132}
+        - {x: -100, y: -147}
+        - {x: -42, y: -169}
+        - {x: 26, y: -186}
+        - {x: 45, y: -188}
+        - {x: 82, y: -188}
+        - {x: 92, y: -169}
+        - {x: 107, y: -134}
+        - {x: 111, y: -121}
+    - name: blankethurt_frame8
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1183
+        width: 282
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 127, y: -3.5}
+        - {x: 137, y: 18.5}
+        - {x: 141, y: 43.5}
+        - {x: 141, y: 116.5}
+        - {x: 137, y: 130.5}
+        - {x: 126, y: 139.5}
+        - {x: 116, y: 142.5}
+        - {x: 71, y: 165.5}
+        - {x: 40, y: 176.5}
+        - {x: -9, y: 186.5}
+        - {x: -23, y: 188.5}
+        - {x: -88, y: 188.5}
+        - {x: -97, y: 183.5}
+        - {x: -85, y: 149.5}
+        - {x: -71, y: 108.5}
+        - {x: -71, y: 82.5}
+        - {x: -102, y: 28.5}
+        - {x: -131, y: -9.5}
+        - {x: -141, y: -36.5}
+        - {x: -141, y: -97.5}
+        - {x: -122, y: -129.5}
+        - {x: -103, y: -140.5}
+        - {x: -72, y: -156.5}
+        - {x: -24, y: -172.5}
+        - {x: 19, y: -181.5}
+        - {x: 52, y: -188.5}
+        - {x: 114, y: -188.5}
+        - {x: 119, y: -176.5}
+        - {x: 101, y: -139.5}
+        - {x: 95, y: -112.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

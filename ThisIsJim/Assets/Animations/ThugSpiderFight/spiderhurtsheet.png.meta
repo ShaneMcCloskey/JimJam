@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: f080f968e80b3664581845d108bb19dc
+timeCreated: 1460655136
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spiderhurtsheet_0
+    21300002: spiderhurtsheet_1
+    21300004: spiderhurtsheet_2
+    21300006: spiderhurtsheet_3
+    21300008: spiderhurtsheet_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spiderhurtsheet_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 57
+        width: 79
+        height: 152
+      alignment: 9
+      pivot: {x: 0.7539707, y: 0.07650671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.563683, y: 9.370979}
+        - {x: 13.436317, y: 33.37098}
+        - {x: 19.436317, y: 75.37098}
+        - {x: 19.436317, y: 133.37097}
+        - {x: 11.436317, y: 140.37097}
+        - {x: -30.563683, y: 140.37097}
+        - {x: -59.563683, y: 103.37098}
+        - {x: -59.563683, y: 2.3709793}
+        - {x: -48.563683, y: -11.629021}
+        - {x: 19.436317, y: -11.629021}
+        - {x: 19.436317, y: 1.3709793}
+        - {x: 4.4363174, y: 10.370979}
+    - name: spiderhurtsheet_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 98
+        height: 148
+      alignment: 9
+      pivot: {x: 0.48293898, y: 0.079182394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.671982, y: 136.281}
+        - {x: 8.671982, y: 133.281}
+        - {x: 3.6719818, y: 111.281006}
+        - {x: -40.32802, y: 59.281006}
+        - {x: -45.32802, y: 51.281006}
+        - {x: -47.32802, y: 47.281006}
+        - {x: -47.32802, y: -3.7189941}
+        - {x: -33.32802, y: -11.718994}
+        - {x: 50.67198, y: -11.718994}
+        - {x: 50.67198, y: 136.281}
+    - name: spiderhurtsheet_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 56
+        width: 116
+        height: 136
+      alignment: 9
+      pivot: {x: 0.27298632, y: 0.08200685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.333588, y: 124.84707}
+        - {x: -31.666412, y: 65.84707}
+        - {x: -31.666412, y: 9.847069}
+        - {x: -15.666412, y: -11.152931}
+        - {x: 48.333588, y: -11.152931}
+        - {x: 84.33359, y: 59.84707}
+        - {x: 84.33359, y: 124.84707}
+    - name: spiderhurtsheet_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 55
+        width: 122
+        height: 131
+      alignment: 9
+      pivot: {x: 0.2635941, y: 0.075625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.841522, y: 8.093124}
+        - {x: 19.841522, y: 6.0931244}
+        - {x: 32.841522, y: 13.093124}
+        - {x: 45.841522, y: 21.093124}
+        - {x: 82.84152, y: 72.093124}
+        - {x: 89.84152, y: 83.093124}
+        - {x: 89.84152, y: 119.093124}
+        - {x: 87.84152, y: 121.093124}
+        - {x: 54.841522, y: 121.093124}
+        - {x: 45.841522, y: 108.093124}
+        - {x: -21.158478, y: 70.093124}
+        - {x: -32.158478, y: 43.093124}
+        - {x: -32.158478, y: 8.093124}
+        - {x: -21.158478, y: -9.906876}
+        - {x: 49.841522, y: -9.906876}
+        - {x: 49.841522, y: -3.9068756}
+        - {x: 43.841522, y: 3.0931244}
+        - {x: 29.841522, y: 8.093124}
+    - name: spiderhurtsheet_4
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 54
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

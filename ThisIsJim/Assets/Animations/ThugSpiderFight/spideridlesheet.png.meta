@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 212d8253f2ffb5746836a120e9796362
+timeCreated: 1460569230
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spideridle_frame1
+    21300002: spideridle_frame2
+    21300004: spideridle_frame3
+    21300006: spideridle_frame4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spideridle_frame1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 339
+        width: 80
+        height: 152
+      alignment: 9
+      pivot: {x: 0.6731269, y: 0.07609659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.149849, y: 19.43332}
+        - {x: 26.149849, y: 140.43332}
+        - {x: -17.850151, y: 140.43332}
+        - {x: -53.85015, y: 86.43332}
+        - {x: -53.85015, y: 3.433319}
+        - {x: -28.850151, y: -11.566681}
+        - {x: 26.149849, y: -11.566681}
+        - {x: 26.149849, y: 1.4333191}
+        - {x: 11.149849, y: 10.433319}
+    - name: spideridle_frame2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 340
+        width: 80
+        height: 148
+      alignment: 9
+      pivot: {x: 0.6731268, y: 0.06870847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.149857, y: 10.831146}
+        - {x: -2.8501434, y: 9.831146}
+        - {x: -4.8501434, y: 5.8311462}
+        - {x: -10.850143, y: 7.8311462}
+        - {x: -8.850143, y: 7.8311462}
+        - {x: 5.1498566, y: 15.831146}
+        - {x: 20.149857, y: 28.831146}
+        - {x: 26.149857, y: 62.831146}
+        - {x: 26.149857, y: 130.83115}
+        - {x: 17.149857, y: 137.83115}
+        - {x: -25.850143, y: 137.83115}
+        - {x: -33.850143, y: 133.83115}
+        - {x: -53.850143, y: 45.831146}
+        - {x: -53.850143, y: -10.168854}
+        - {x: 26.149857, y: -10.168854}
+        - {x: 26.149857, y: 0.83114624}
+        - {x: 20.149857, y: 5.8311462}
+    - name: spideridle_frame3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 339
+        width: 79
+        height: 145
+      alignment: 9
+      pivot: {x: 0.66769564, y: 0.076397076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.747955, y: 133.92242}
+        - {x: -52.747955, y: 77.922424}
+        - {x: -52.747955, y: -5.0775757}
+        - {x: -32.747955, y: -11.077576}
+        - {x: 26.252045, y: -11.077576}
+        - {x: 26.252045, y: 121.922424}
+        - {x: 18.252045, y: 133.92242}
+    - name: spideridle_frame4
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 340
+        width: 80
+        height: 140
+      alignment: 9
+      pivot: {x: 0.67321587, y: 0.07418954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.857269, y: 129.61346}
+        - {x: -20.85727, y: 122.613464}
+        - {x: -53.85727, y: 52.613464}
+        - {x: -53.85727, y: -5.3865356}
+        - {x: -47.85727, y: -10.386536}
+        - {x: 26.14273, y: -10.386536}
+        - {x: 26.14273, y: 116.613464}
+        - {x: 21.14273, y: 129.61346}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

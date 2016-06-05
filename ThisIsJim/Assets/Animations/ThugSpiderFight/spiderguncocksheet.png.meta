@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: f1ab3f1008c0e954d883c2f705197b6a
+timeCreated: 1460224764
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spidercock_frame1
+    21300002: spidercock_frame2
+    21300004: spidercock_frame3
+    21300006: spidercock_frame4
+    21300008: spidercock_frame5
+    21300010: spidercock_frame6
+    21300012: spidercock_frame7
+    21300014: spidercock_frame8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spidercock_frame1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 831
+        width: 80
+        height: 152
+      alignment: 9
+      pivot: {x: 0.6974832, y: 0.084245384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.201347, y: 18.194702}
+        - {x: 24.201347, y: 139.1947}
+        - {x: -19.798653, y: 139.1947}
+        - {x: -55.798653, y: 85.1947}
+        - {x: -55.798653, y: 2.1947021}
+        - {x: -30.798653, y: -12.805298}
+        - {x: 24.201347, y: -12.805298}
+        - {x: 24.201347, y: 0.19470215}
+        - {x: 9.201347, y: 9.194702}
+    - name: spidercock_frame2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 831
+        width: 81
+        height: 152
+      alignment: 9
+      pivot: {x: 0.67731375, y: 0.084245384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.862411, y: 139.1947}
+        - {x: -54.86241, y: 105.1947}
+        - {x: -54.86241, y: 1.1947021}
+        - {x: -44.86241, y: -12.805298}
+        - {x: 26.137589, y: -12.805298}
+        - {x: 26.137589, y: 139.1947}
+    - name: spidercock_frame3
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 831
+        width: 81
+        height: 152
+      alignment: 9
+      pivot: {x: 0.695045, y: 0.084245384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.298645, y: 8.194702}
+        - {x: 18.701355, y: 32.194702}
+        - {x: 24.701355, y: 75.1947}
+        - {x: 24.701355, y: 131.1947}
+        - {x: 16.701355, y: 139.1947}
+        - {x: -24.298645, y: 139.1947}
+        - {x: -56.298645, y: 97.1947}
+        - {x: -56.298645, y: 2.1947021}
+        - {x: -40.298645, y: -12.805298}
+        - {x: 19.701355, y: -12.805298}
+        - {x: 24.701355, y: -10.805298}
+        - {x: 24.701355, y: 13.194702}
+        - {x: 16.701355, y: 14.194702}
+    - name: spidercock_frame4
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 831
+        width: 80
+        height: 152
+      alignment: 9
+      pivot: {x: 0.6885063, y: 0.07952118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.080505, y: 139.91278}
+        - {x: -55.080505, y: 86.91278}
+        - {x: -55.080505, y: 2.9127808}
+        - {x: -26.080505, y: -12.087219}
+        - {x: 24.919495, y: -12.087219}
+        - {x: 24.919495, y: 139.91278}
+    - name: spidercock_frame5
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 833
+        width: 80
+        height: 150
+      alignment: 9
+      pivot: {x: 0.6885063, y: 0.08827718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.080505, y: 136.75842}
+        - {x: -55.080505, y: 71.75842}
+        - {x: -55.080505, y: 0.75842285}
+        - {x: -28.080505, y: -13.241577}
+        - {x: 24.919495, y: -13.241577}
+        - {x: 24.919495, y: 125.75842}
+        - {x: 18.919495, y: 136.75842}
+    - name: spidercock_frame6
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 831
+        width: 80
+        height: 150
+      alignment: 9
+      pivot: {x: 0.6885063, y: 0.07870199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.080505, y: 138.1947}
+        - {x: -55.080505, y: 73.1947}
+        - {x: -55.080505, y: -3.8052979}
+        - {x: -43.080505, y: -11.805298}
+        - {x: 24.919495, y: -11.805298}
+        - {x: 24.919495, y: 138.1947}
+    - name: spidercock_frame7
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 831
+        width: 80
+        height: 170
+      alignment: 9
+      pivot: {x: 0.66157687, y: 0.06912734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.073853, y: 14.248352}
+        - {x: 27.073853, y: 11.248352}
+        - {x: 27.073853, y: 158.24835}
+        - {x: -24.926147, y: 158.24835}
+        - {x: -52.926147, y: 95.24835}
+        - {x: -52.926147, y: -7.751648}
+        - {x: -29.926147, y: -11.751648}
+        - {x: 21.073853, y: -11.751648}
+        - {x: 23.073853, y: -8.751648}
+        - {x: 21.073853, y: 8.248352}
+        - {x: 16.073853, y: 13.248352}
+    - name: spidercock_frame8
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 831
+        width: 85
+        height: 167
+      alignment: 9
+      pivot: {x: 0.64362437, y: 0.07428746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.708069, y: 145.594}
+        - {x: -54.70807, y: 92.593994}
+        - {x: -54.70807, y: 2.5939941}
+        - {x: -28.708069, y: -12.406006}
+        - {x: 27.291931, y: -12.406006}
+        - {x: 27.291931, y: 145.594}
+      - - {x: 16.291931, y: 25.593994}
+        - {x: 15.291931, y: 24.593994}
+        - {x: 15.291931, y: 19.593994}
+        - {x: 17.291931, y: 17.593994}
+        - {x: 26.291931, y: 17.593994}
+        - {x: 26.291931, y: 21.593994}
+        - {x: 23.291931, y: 25.593994}
+      - - {x: 22.291931, y: 101.593994}
+        - {x: 22.291931, y: 96.593994}
+        - {x: 25.291931, y: 94.593994}
+        - {x: 30.291931, y: 94.593994}
+        - {x: 30.291931, y: 101.593994}
+      - - {x: 24.291931, y: 111.593994}
+        - {x: 20.291931, y: 107.593994}
+        - {x: 20.291931, y: 105.593994}
+        - {x: 21.291931, y: 103.593994}
+        - {x: 28.291931, y: 103.593994}
+        - {x: 30.291931, y: 105.593994}
+        - {x: 30.291931, y: 111.593994}
+      - - {x: -11.708069, y: 150.594}
+        - {x: -12.708069, y: 148.594}
+        - {x: -12.708069, y: 142.594}
+        - {x: -9.708069, y: 141.594}
+        - {x: -3.7080688, y: 141.594}
+        - {x: -3.7080688, y: 146.594}
+        - {x: -7.708069, y: 150.594}
+      - - {x: -6.708069, y: 154.594}
+        - {x: -5.708069, y: 149.594}
+        - {x: -4.708069, y: 146.594}
+        - {x: -0.70806885, y: 146.594}
+        - {x: 2.2919312, y: 147.594}
+        - {x: 2.2919312, y: 152.594}
+        - {x: 0.29193115, y: 154.594}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

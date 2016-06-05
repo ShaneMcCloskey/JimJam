@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: a2d831e6485bec547a88e3f4a054e964
+timeCreated: 1460689376
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: jimsleepdemoendsheet_0
+    21300002: jimsleepdemoendsheet_1
+    21300004: jimsleepdemoendsheet_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: jimsleepdemoendsheet_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1433
+        width: 656
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 165, y: 0.5}
+        - {x: 164, y: 10.5}
+        - {x: 155, y: 20.5}
+        - {x: 164, y: 59.5}
+        - {x: 147, y: 78.5}
+        - {x: 131, y: 116.5}
+        - {x: 104, y: 136.5}
+        - {x: 51, y: 136.5}
+        - {x: 46, y: 135.5}
+        - {x: 8, y: 103.5}
+        - {x: -2, y: 91.5}
+        - {x: -11, y: 67.5}
+        - {x: -35, y: 59.5}
+        - {x: -138, y: 5.5}
+        - {x: -163, y: -10.5}
+        - {x: -164, y: -17.5}
+        - {x: -164, y: -86.5}
+        - {x: -163, y: -87.5}
+        - {x: -133, y: -106.5}
+        - {x: -94, y: -120.5}
+        - {x: -29, y: -135.5}
+        - {x: 11, y: -135.5}
+        - {x: 61, y: -112.5}
+        - {x: 138, y: -70.5}
+        - {x: 165, y: -39.5}
+    - name: jimsleepdemoendsheet_1
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1437
+        width: 654
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 164.5, y: 12.5}
+        - {x: 158.5, y: 57.5}
+        - {x: 155.5, y: 67.5}
+        - {x: 130.5, y: 110.5}
+        - {x: 108.5, y: 135.5}
+        - {x: 101.5, y: 136.5}
+        - {x: 57.5, y: 136.5}
+        - {x: 43.5, y: 131.5}
+        - {x: 2.5, y: 94.5}
+        - {x: -29.5, y: 59.5}
+        - {x: -148.5, y: -0.5}
+        - {x: -163.5, y: -20.5}
+        - {x: -163.5, y: -84.5}
+        - {x: -150.5, y: -98.5}
+        - {x: -134.5, y: -105.5}
+        - {x: -107.5, y: -115.5}
+        - {x: -77.5, y: -125.5}
+        - {x: -23.5, y: -135.5}
+        - {x: 14.5, y: -135.5}
+        - {x: 21.5, y: -134.5}
+        - {x: 52.5, y: -121.5}
+        - {x: 125.5, y: -81.5}
+        - {x: 164.5, y: -46.5}
+    - name: jimsleepdemoendsheet_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 827
+        width: 656
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 165, y: -40.5}
+        - {x: 165, y: 7.5}
+        - {x: 162, y: 57.5}
+        - {x: 148, y: 73.5}
+        - {x: 137, y: 110.5}
+        - {x: 105, y: 135.5}
+        - {x: 59, y: 135.5}
+        - {x: 37, y: 127.5}
+        - {x: 1, y: 95.5}
+        - {x: -24, y: 63.5}
+        - {x: -42, y: 55.5}
+        - {x: -133, y: 8.5}
+        - {x: -160, y: -14.5}
+        - {x: -164, y: -25.5}
+        - {x: -164, y: -87.5}
+        - {x: -160, y: -95.5}
+        - {x: -86, y: -127.5}
+        - {x: -34, y: -134.5}
+        - {x: 16, y: -134.5}
+        - {x: 43, y: -122.5}
+        - {x: 124, y: -77.5}
+        - {x: 142, y: -61.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

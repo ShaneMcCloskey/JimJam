@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: b770be16f66dec24d98db053c32d29b6
+timeCreated: 1460221716
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blanketdeath_frame1
+    21300002: blanketdeath_frame2
+    21300004: blanketdeath_frame3
+    21300006: blanketdeath_frame4
+    21300008: blanketdeath_frame5
+    21300010: blanketdeath_frame6
+    21300012: blanketdeath_frame7
+    21300014: blanketdeath_frame8
+    21300016: blanketdeath_frame9
+    21300018: blanketdeath_frame10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: blanketdeath_frame1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1739
+        width: 407
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.5, y: -61}
+        - {x: 176.5, y: -96}
+        - {x: 202.5, y: -101}
+        - {x: 203.5, y: -97}
+        - {x: 203.5, y: -35}
+        - {x: 192.5, y: 46}
+        - {x: 162.5, y: 91}
+        - {x: 114.5, y: 115}
+        - {x: 87.5, y: 122}
+        - {x: -14.5, y: 122}
+        - {x: -26.5, y: 121}
+        - {x: -65.5, y: 109}
+        - {x: -102.5, y: 89}
+        - {x: -111.5, y: 83}
+        - {x: -132.5, y: 66}
+        - {x: -137.5, y: 62}
+        - {x: -144.5, y: 56}
+        - {x: -158.5, y: 42}
+        - {x: -165.5, y: 34}
+        - {x: -192.5, y: -7}
+        - {x: -203.5, y: -13}
+        - {x: -203.5, y: -60}
+        - {x: -193.5, y: -83}
+        - {x: -144.5, y: -93}
+        - {x: -73.5, y: -122}
+        - {x: -6.5, y: -122}
+        - {x: -1.5, y: -118}
+        - {x: 10.5, y: -46}
+        - {x: 32.5, y: -33}
+    - name: blanketdeath_frame2
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1635
+        width: 450
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: -7.5}
+        - {x: 148, y: -34.5}
+        - {x: 157, y: -37.5}
+        - {x: 213, y: -65.5}
+        - {x: 225, y: -59.5}
+        - {x: 225, y: -44.5}
+        - {x: 170, y: 26.5}
+        - {x: 88, y: 91.5}
+        - {x: 45, y: 111.5}
+        - {x: -70, y: 111.5}
+        - {x: -131, y: 89.5}
+        - {x: -225, y: 26.5}
+        - {x: -225, y: 2.5}
+        - {x: -201, y: -32.5}
+        - {x: -153, y: -70.5}
+        - {x: -74, y: -111.5}
+        - {x: -35, y: -111.5}
+        - {x: -30, y: -108.5}
+        - {x: -1, y: -55.5}
+        - {x: 54, y: -1.5}
+    - name: blanketdeath_frame3
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 1588
+        width: 520
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 178, y: -23}
+        - {x: 259, y: -41}
+        - {x: 260, y: -39}
+        - {x: 260, y: -15}
+        - {x: 254, y: -2}
+        - {x: 197, y: 36}
+        - {x: 150, y: 44}
+        - {x: 111, y: 68}
+        - {x: 53, y: 97}
+        - {x: 6, y: 112}
+        - {x: -119, y: 112}
+        - {x: -179, y: 94}
+        - {x: -260, y: 35}
+        - {x: -260, y: 15}
+        - {x: -232, y: -24}
+        - {x: -207, y: -51}
+        - {x: -131, y: -103}
+        - {x: -109, y: -112}
+        - {x: -63, y: -112}
+        - {x: -51, y: -107}
+        - {x: -5, y: -17}
+        - {x: 107, y: 19}
+        - {x: 117, y: 16}
+    - name: blanketdeath_frame4
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1643
+        width: 525
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 196.5, y: -71.5}
+        - {x: 228.5, y: -76.5}
+        - {x: 262.5, y: -76.5}
+        - {x: 262.5, y: -57.5}
+        - {x: 146.5, y: 32.5}
+        - {x: -21.5, y: 76.5}
+        - {x: -128.5, y: 76.5}
+        - {x: -142.5, y: 75.5}
+        - {x: -199.5, y: 63.5}
+        - {x: -262.5, y: 24.5}
+        - {x: -262.5, y: 5.5}
+        - {x: -222.5, y: -33.5}
+        - {x: -144.5, y: -76.5}
+        - {x: -98.5, y: -76.5}
+        - {x: -47.5, y: -41.5}
+        - {x: 42.5, y: -16.5}
+        - {x: 131.5, y: -34.5}
+    - name: blanketdeath_frame5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1388
+        width: 459
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -223.5, y: 35}
+        - {x: -229.5, y: 34}
+        - {x: -229.5, y: 5}
+        - {x: -90.5, y: -35}
+        - {x: 66.5, y: -35}
+        - {x: 229.5, y: -6}
+        - {x: 229.5, y: 33}
+        - {x: 212.5, y: 35}
+    - name: blanketdeath_frame6
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1332
+        width: 474
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 237, y: 47.5}
+        - {x: 125, y: 88.5}
+        - {x: 77, y: 88.5}
+        - {x: 3, y: -9.5}
+        - {x: -81, y: -2.5}
+        - {x: -139, y: 19.5}
+        - {x: -233, y: 47.5}
+        - {x: -237, y: 40.5}
+        - {x: -237, y: 25.5}
+        - {x: -177, y: -35.5}
+        - {x: -118, y: -68.5}
+        - {x: -41, y: -87.5}
+        - {x: -37, y: -88.5}
+        - {x: 77, y: -88.5}
+        - {x: 136, y: -81.5}
+        - {x: 197, y: -34.5}
+        - {x: 228, y: 4.5}
+        - {x: 237, y: 23.5}
+    - name: blanketdeath_frame7
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1280
+        width: 433
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 212.5, y: -11.5}
+        - {x: 216.5, y: 9.5}
+        - {x: 216.5, y: 43.5}
+        - {x: 198.5, y: 49.5}
+        - {x: 129.5, y: 54.5}
+        - {x: 13.5, y: 87.5}
+        - {x: 5.5, y: 71.5}
+        - {x: 0.5, y: 37.5}
+        - {x: -10.5, y: 44.5}
+        - {x: -128.5, y: 73.5}
+        - {x: -184.5, y: 103.5}
+        - {x: -216.5, y: 103.5}
+        - {x: -216.5, y: 54.5}
+        - {x: -177.5, y: -6.5}
+        - {x: -130.5, y: -46.5}
+        - {x: -92.5, y: -72.5}
+        - {x: -57.5, y: -88.5}
+        - {x: 8.5, y: -103.5}
+        - {x: 108.5, y: -103.5}
+        - {x: 132.5, y: -94.5}
+        - {x: 170.5, y: -76.5}
+        - {x: 200.5, y: -44.5}
+    - name: blanketdeath_frame8
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1240
+        width: 497
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 227.5, y: 40.5}
+        - {x: 98.5, y: 69.5}
+        - {x: 75.5, y: 69.5}
+        - {x: 43.5, y: 22.5}
+        - {x: -16.5, y: 9.5}
+        - {x: -239.5, y: 69.5}
+        - {x: -248.5, y: 69.5}
+        - {x: -248.5, y: 47.5}
+        - {x: -196.5, y: -12.5}
+        - {x: -142.5, y: -37.5}
+        - {x: -78.5, y: -66.5}
+        - {x: -49.5, y: -69.5}
+        - {x: 108.5, y: -69.5}
+        - {x: 192.5, y: -47.5}
+        - {x: 248.5, y: 12.5}
+        - {x: 248.5, y: 29.5}
+    - name: blanketdeath_frame9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 973
+        width: 542
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 271, y: 21.5}
+        - {x: 271, y: 44.5}
+        - {x: 262, y: 45.5}
+        - {x: 173, y: 56.5}
+        - {x: 110, y: 68.5}
+        - {x: 85, y: 68.5}
+        - {x: 32, y: 52.5}
+        - {x: -80, y: 32.5}
+        - {x: -270, y: 32.5}
+        - {x: -271, y: 30.5}
+        - {x: -271, y: 15.5}
+        - {x: -194, y: -35.5}
+        - {x: -93, y: -65.5}
+        - {x: -53, y: -68.5}
+        - {x: 57, y: -68.5}
+        - {x: 126, y: -56.5}
+        - {x: 202, y: -21.5}
+        - {x: 263, y: 3.5}
+    - name: blanketdeath_frame10
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 961
+        width: 530
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 264, y: -11.5}
+        - {x: 265, y: -7.5}
+        - {x: 265, y: 10.5}
+        - {x: 237, y: 26.5}
+        - {x: 184, y: 45.5}
+        - {x: 106, y: 77.5}
+        - {x: 88, y: 86.5}
+        - {x: 60, y: 86.5}
+        - {x: 22, y: 80.5}
+        - {x: -39, y: 66.5}
+        - {x: -103, y: 55.5}
+        - {x: -190, y: 39.5}
+        - {x: -251, y: 25.5}
+        - {x: -265, y: 16.5}
+        - {x: -265, y: 6.5}
+        - {x: -246, y: -7.5}
+        - {x: -137, y: -63.5}
+        - {x: -77, y: -86.5}
+        - {x: -50, y: -86.5}
+        - {x: 22, y: -70.5}
+        - {x: 116, y: -48.5}
+        - {x: 224, y: -19.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
