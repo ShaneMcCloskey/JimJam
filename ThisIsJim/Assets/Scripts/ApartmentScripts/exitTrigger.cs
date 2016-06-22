@@ -1,30 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class exitTrigger : MonoBehaviour {
-
+public class exitTrigger : MonoBehaviour
+{
 	public Transform pointOfExit;
 	//public string levelToLoad = "JimApartment_LR";
 	// Use this for initialization
 	public roomTrigger roomTrig;
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-	void OnTriggerEnter (Collider other){
-		
-		if(other.tag == "Player"){
+	void OnTriggerEnter (Collider other)
+    {	
+		if(other.tag == "Player")
+        {
             //print ("RAN");
             NavMeshAgent nav = other.GetComponent<NavMeshAgent>();
             jimControl2D jim = other.GetComponent<jimControl2D>();
             Vector3 ogDestination;
             ogDestination = nav.destination;
-
             
             //nav.Warp(pointOfExit.position);
 

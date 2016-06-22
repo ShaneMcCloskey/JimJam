@@ -6,7 +6,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine.SceneManagement;
 
-public class SaveScript : MonoBehaviour {
+public class SaveScript : MonoBehaviour
+{
 	//Generic Save script
 	//Assign in inspector:
 	public int 							saveSlot = 0;
@@ -29,27 +30,26 @@ public class SaveScript : MonoBehaviour {
 	}
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		//loadButton.interactable = false;
 		clearButton.SetActive (false);
 		DontDestroyOnLoad (this);
-		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat")) {
+		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat"))
+        {
 			loadButton.interactable = true;
 			clearButton.SetActive (true);
 		}
 
 		Load ();
-		for (int i = 0; i < slotName.Length; i++) {
+		for (int i = 0; i < slotName.Length; i++)
+        {
 			slotName[i].text = saveName;
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-	public void Save (){
+	public void Save ()
+    {
 		BinaryFormatter bf = new BinaryFormatter ();
 		FileStream file = File.Create (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat");
 
@@ -61,8 +61,10 @@ public class SaveScript : MonoBehaviour {
 		file.Close ();
 	}
 
-	public void Load (){
-		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat")) {
+	public void Load ()
+    {
+		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat"))
+        {
 			print ("load file exists");
 			BinaryFormatter bf = new BinaryFormatter ();
 			FileStream file = File.Open (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat", FileMode.Open);
@@ -72,57 +74,75 @@ public class SaveScript : MonoBehaviour {
 			saveName = data.saveName;
 			level = data.level;
 			//slotName.text = data.saveName;
-			for (int i = 0; i < slotName.Length; i++) {
+			for (int i = 0; i < slotName.Length; i++)
+            {
 				slotName [i].text = saveName;
 			}
 			clearButton.SetActive (true);
 			loadButton.interactable = true;
-		} else {
+		}
+        else
+        {
 			print ("no load file");
 			clearButton.SetActive (false);
-			for (int j = 0; j < slotName.Length; j++) {
+			for (int j = 0; j < slotName.Length; j++)
+            {
 				slotName [j].text = "Slot " + saveSlot;
 				//loadButton.interactable = false;
 			}
 		}
 	}
 
-	public void Clear(){
+	public void Clear()
+    {
 		print ("clear");
-		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat")) {
+		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat"))
+        {
 			File.Delete (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat");
 			clearButton.SetActive (false);
 		}
 	}
 
-	public void LoadAndStart (){
-		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat")) {
+	public void LoadAndStart ()
+    {
+		if (File.Exists (Application.persistentDataPath + "/playerInfo" + saveSlot + ".dat"))
+        {
 			loaded = true;
             SceneManager.LoadScene(level);
-		} else {
+		}
+        else
+        {
 			//empty file
 		}
 	}
 
-	public void Select(bool selected){
-		if (selected) {
+	public void Select(bool selected)
+    {
+		if (selected)
+        {
 			loaded = true;
 			saveName = saveNameInput.text;
-		} else { 
+		}
+        else
+        { 
 			loaded = false;
 		}
 	}
 
-	void OnLevelWasLoaded(int levelNumber) {
+	void OnLevelWasLoaded(int levelNumber)
+    {
         Scene currentScene = SceneManager.GetActiveScene();
 
-        if (currentScene.name != "MainMenu" && loaded == false) {
+        if (currentScene.name != "MainMenu" && loaded == false)
+        {
 			Destroy (gameObject);
 		}
-		if (currentScene.name != "MainMenu") {
+		if (currentScene.name != "MainMenu")
+        {
 			gameStarted = true;
 		}
-		if (currentScene.name == "MainMenu" && gameStarted) { 
+		if (currentScene.name == "MainMenu" && gameStarted)
+        { 
 			Destroy (gameObject);
 			Awake();
 		}
@@ -131,7 +151,8 @@ public class SaveScript : MonoBehaviour {
 }
 
 [Serializable]
-class PlayerData{
+class PlayerData
+{
 	public string 						saveName;
 	public int 							level = 0;
 }

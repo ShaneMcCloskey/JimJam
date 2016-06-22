@@ -5,8 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class fightManager : MonoBehaviour {
-
+public class fightManager : MonoBehaviour
+{
     public string loseMessage = "RIP Jim";
     public string winMessage = "RIP Fruit Fly";
     
@@ -45,7 +45,8 @@ public class fightManager : MonoBehaviour {
     bool attackLuck; //last attack luck status, if true the next damage display will also display a critical hit!
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         cStats.Clear();
         fighters.Clear();
         goodGuysStats.Clear();
@@ -53,24 +54,32 @@ public class fightManager : MonoBehaviour {
 
         fMSkills = transform.GetComponent<fightManagerSkills>();
         //characters = GameObject.FindGameObjectsWithTag ("Fighter");
-		for (int i = 0; i < characters.Length; i++) {
+		for (int i = 0; i < characters.Length; i++)
+        {
 			cStats.Add (characters[i].GetComponent<characterStats> ()); //gets character stats reference
 			fighters.Add (characters [i]); //adds gameObjects under Fighter tag to fighters list
 		}
 
-		for (int i = 0; i < characters.Length; i++) {
-			if (cStats [i].enemy == false) {
+		for (int i = 0; i < characters.Length; i++)
+        {
+			if (cStats [i].enemy == false)
+            {
 				goodGuysStats.Add (cStats [i]); //adds player characters stats to a list
-			} else {
+			}
+            else
+            {
 				badGuysStats.Add (cStats [i]); //adds player characters stats to a list
 			}
 		}
 
-		if (fighters.Count > 0){
-			fighters.Sort (delegate(GameObject b, GameObject a) {
+		if (fighters.Count > 0)
+        {
+			fighters.Sort (delegate(GameObject b, GameObject a) 
+            {
 				return (a.GetComponent<characterStats> ().speed).CompareTo (b.GetComponent<characterStats> ().speed);
-				});
-			cStats.Sort (delegate(characterStats d, characterStats c) {
+		    });
+			cStats.Sort (delegate(characterStats d, characterStats c) 
+            {
 				return (c.speed).CompareTo (d.speed);
 			});
 
@@ -81,26 +90,28 @@ public class fightManager : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+
 		//note about the playerStats,
 		//if I save them at the end of every fight scene or skills edit
 		// in the options menu, they can just be loaded at the beginning of another scene,
 		//no need to worry aboout bringing the Jim prefab from the apartment into the fight scenes
-	}
+	
 
-    public IEnumerator FirstTurn (){
+    public IEnumerator FirstTurn ()
+    {
     	yield return new WaitForSeconds(sceneIntroTime);
         NextTurn();
     }
 
-	public IEnumerator WaitToNextTurn (float timeToWait){
+	public IEnumerator WaitToNextTurn (float timeToWait)
+    {
 		yield return new WaitForSeconds(timeToWait);
 		NextTurn();
 		attackIsRunning = false;
 	}
 
-
-	public void NextTurn (){
+	public void NextTurn ()
+    {
         enemyHit = false;
         if (turn != turnState.neutral && turnNumber != (fighters.Count - 1) && cStats[(turnNumber + 1)].healthPoints > 0.0f)
           turnNumber++;         //go to next fighter
@@ -143,7 +154,8 @@ public class fightManager : MonoBehaviour {
 			StartCoroutine (EnemyAttack ());
             // enemyStats[0].RandomOptionSelect();
         }
-        else {
+        else
+        {
             turn = turnState.player;
 			disablePlayerInput.SetActive (false);
             //playerStats[0].ShowOptions(); //shown on a timer? on-screen too?, IEnumerator
@@ -154,39 +166,39 @@ public class fightManager : MonoBehaviour {
     public IEnumerator SwapPositions(bool enemy, int primaryFighter)
     {
         int tempCount = 0;
-            for (int i = 0; i < fighters.Count; i++)
+        for (int i = 0; i < fighters.Count; i++)
+        {
+            Vector3 storedPos = fighters[i].transform.position;
+            if (cStats[i].enemy == true)
             {
-                Vector3 storedPos = fighters[i].transform.position;
-                if (cStats[i].enemy == true)
-                {
                 
-                    if (i == primaryFighter)
-                    {
-                    StartCoroutine(moveObject(fighters[i].transform, enemyPositions[0].transform.position));
-                        //lerp to enemyPositions[0]
-                       /* while (elapsedTime < time)
-                        {
-                            fighters[i].transform.position = Vector3.Lerp(storedPos, enemyPositions[0].transform.position, (elapsedTime/ time));
-                            elapsedTime += Time.deltaTime;
-                            yield return new WaitForEndOfFrame();
-                        }*/
-                    }
-                    else
-                    {
-                        print("move temp");
-                        tempCount++;
-                        StartCoroutine(moveObject(fighters[i].transform, enemyPositions[tempCount].transform.position));
-                    //lerp to enemyPositions[tempCount]
+                if (i == primaryFighter)
+                {
+                StartCoroutine(moveObject(fighters[i].transform, enemyPositions[0].transform.position));
+                    //lerp to enemyPositions[0]
                     /* while (elapsedTime < time)
-                     {
-                         fighters[i].transform.position = Vector3.Lerp(storedPos, enemyPositions[tempCount].transform.position, (elapsedTime / time));
-                         elapsedTime += Time.deltaTime;
-                         yield return new WaitForEndOfFrame();
-                     }*/
+                    {
+                        fighters[i].transform.position = Vector3.Lerp(storedPos, enemyPositions[0].transform.position, (elapsedTime/ time));
+                        elapsedTime += Time.deltaTime;
+                        yield return new WaitForEndOfFrame();
+                    }*/
+                }
+                else
+                {
+                    print("move temp");
+                    tempCount++;
+                    StartCoroutine(moveObject(fighters[i].transform, enemyPositions[tempCount].transform.position));
+                //lerp to enemyPositions[tempCount]
+                /* while (elapsedTime < time)
+                    {
+                        fighters[i].transform.position = Vector3.Lerp(storedPos, enemyPositions[tempCount].transform.position, (elapsedTime / time));
+                        elapsedTime += Time.deltaTime;
+                        yield return new WaitForEndOfFrame();
+                    }*/
                 }
 
-                }
             }
+        }
         yield return new WaitForSeconds(0.5f);
     }
 
@@ -204,7 +216,6 @@ public class fightManager : MonoBehaviour {
         //yield return new WaitForSeconds(0.5f);
     }
 
-
     public void SelectedEnemy()
     {
         for (int i = 0; i < badGuysStats.Count; i++)
@@ -217,20 +228,24 @@ public class fightManager : MonoBehaviour {
         }
     }
 
-    public void SelectedEnemy (GameObject enemySelection){
+    public void SelectedEnemy (GameObject enemySelection)
+    {
 		print ("this is " + enemySelection.name);
-		for (int i = 0; i < fighters.Count; i++) {
-			if (fighters [i] == enemySelection) {
+		for (int i = 0; i < fighters.Count; i++)
+        {
+			if (fighters [i] == enemySelection)
+            {
 				selectedEnemy = i;
 				print ("RUNNNNNNING with fighter " + i);
 			}
 		}
 	}
 
-
     //Default Options
-	public void Fight (){ //just because I can't access the IEnumerator from the UI button OnClick()
-		if (attackIsRunning == false) {
+	public void Fight ()
+    { //just because I can't access the IEnumerator from the UI button OnClick()
+		if (attackIsRunning == false)
+        {
 			//StartCoroutine (PlayerAttack ());
 			PlayerAttack ();
 		}
@@ -268,9 +283,8 @@ public class fightManager : MonoBehaviour {
         fighters[turnNumber].GetComponent<Animator>().SetInteger("skill", 0);
     }
 
-
-    public void PlayerAttack (){
-
+    public void PlayerAttack ()
+    {
         SelectedEnemy();
 
         attackIsRunning = true;
@@ -280,7 +294,6 @@ public class fightManager : MonoBehaviour {
         attackLuck = LuckCheck(attacker.luck);
 		float attackStrength = StatPlusLuck(attacker.attack, attackLuck);
 		float defenseStrength = StatPlusLuck (defender.defense, LuckCheck(defender.luck));
-        
 
         if (Miss(attacker.speed, defender.speed, attacker.luck) && attacker.timesMissed < timesMissedAllowed)
         {
@@ -316,12 +329,14 @@ public class fightManager : MonoBehaviour {
                 StartCoroutine(WaitToNextTurn(timeBetweenEnemyTurns));       //If current enemy isn't dead, next turn
             }
         }
-        else {
+        else
+        {
             StartCoroutine(WaitToNextTurn(timeBetweenEnemyTurns));       //If current enemy isn't dead, next turn
         }
 	}
 
-	IEnumerator EnemyAttack (){
+	IEnumerator EnemyAttack ()
+    {
 		yield return new WaitForSeconds (2.0f);
 		attackIsRunning = true;
 		attacker = cStats [turnNumber];
@@ -365,12 +380,14 @@ public class fightManager : MonoBehaviour {
         return lucky;
     }
 
-
-    float StatPlusLuck (float stat, bool luck){
-		if (luck) {
+    float StatPlusLuck (float stat, bool luck)
+    {
+		if (luck)
+        {
 			float newAttackStrength = (stat * 1.25f);
 			return newAttackStrength;
-		} else {
+		} else
+        {
 			return stat;
 		}
 	}
@@ -386,7 +403,8 @@ public class fightManager : MonoBehaviour {
            // print("lucky roll");
             return false;
         }
-        else {
+        else
+        {
             // print("MISSED");
             StartCoroutine(MissText());
             return true;
@@ -432,8 +450,6 @@ public class fightManager : MonoBehaviour {
         damageScript = damageInst.GetComponent<RisingText>();
         damageScript.setup(colorRGB, text);
     }
-
-
 
     public IEnumerator EndGame()
     {

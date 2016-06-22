@@ -53,5 +53,4 @@ public class fadeUiOnLoad : MonoBehaviour
         yield return new WaitForSeconds(timeFromStart);
         startFade = true;
     }
-
 }

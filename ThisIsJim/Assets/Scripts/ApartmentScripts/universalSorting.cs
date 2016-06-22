@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class universalSorting : MonoBehaviour {
-
+public class universalSorting : MonoBehaviour
+{
 	private float xPosition; //move down as Z moves up
 	private float zPosition;
 
@@ -12,22 +12,21 @@ public class universalSorting : MonoBehaviour {
     float zValue;
 
 	public Transform target; //if there is a target, the x and zPositions will be based on it
-
-	// Use this for initialization
-	void Start () {
-	
-	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (target == null) {
+	void Update ()
+    {
+		if (target == null)
+        {
 			xPosition = transform.position.x;
 			zPosition = transform.position.z;
             yValue = (-zPosition / 2) + yOffset;
             zValue = (zPosition + zOffset);
 
             transform.position = new Vector3 (xPosition, yValue, zValue);
-		} else {
+		}
+        else
+        {
 			xPosition = target.position.x;
 			zPosition = target.position.z;
 			transform.position = new Vector3 (xPosition, -zPosition/2 + yOffset, zPosition + zOffset);

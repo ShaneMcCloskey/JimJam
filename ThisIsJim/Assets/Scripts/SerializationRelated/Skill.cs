@@ -9,10 +9,9 @@ using System.IO;
 //This should work as a skill for an enemy or a player character right now
 //Put on a prefab so it can be assigned to
 
-
 [Serializable]
-public class Skill : MonoBehaviour {
-
+public class Skill : MonoBehaviour
+{
     [Tooltip("Don't adjust this boioi.")]
     public int skillNumber = 0; //might not be needed
     [Tooltip("How many recollection points this will cost in combat.")]
@@ -52,8 +51,6 @@ public class Skill : MonoBehaviour {
 
     public enum affectedStat { attack, defense, speed, obedience, memory, luck, healthPoints, memoryPoints};
 
-
-
     //Serialized bits   //The way things are, none of these skills should be serialized, only separate lists about them
     //public bool unlocked = false; //entails that it has been bought/found/recieved.
     //public bool equipped = false; //equipped to Jim, mostly for tying to a UI element, real equip will be in Jim stats
@@ -63,13 +60,6 @@ public class Skill : MonoBehaviour {
         //print("test: " + statAffected.ToString());
         //search for fight manager by tag, if not there, you're in the store!
     }
-
-    // Update is called once per frame
-    void Update () {
-	
-	}
-    
-    
 
     /*
     public Skill(string newName, bool selfInflicted, affectedStat statAffectedNew, bool percentageBased, float adjustedPercentOrPoints, int turnsLasting)

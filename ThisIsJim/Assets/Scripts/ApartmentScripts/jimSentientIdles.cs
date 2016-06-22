@@ -1,25 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class jimSentientIdles : MonoBehaviour {
-
+public class jimSentientIdles : MonoBehaviour
+{
 	//notified from JimControl2D
 	jimControl2D jimControl;
 
 	public AnimationClip[] idles; 
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		jimControl = transform.GetComponent<jimControl2D> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-	public void RandomIdle(int randomNo){
-        
+	public void RandomIdle(int randomNo)
+    {
 		//play random idle animation
         //AnimationState idleAnimState = jimControl.anim.set
 		//randomNo = Random.Range(1,3);
@@ -27,10 +23,10 @@ public class jimSentientIdles : MonoBehaviour {
 		print ("anim: " + randomNo);
 		StartCoroutine (Wait (idles[randomNo - 1].length));
 		//jimControl.anim.SetInteger("idleIndex", 0);
-
 	}
 
-	IEnumerator Wait(float waitTime){
+	IEnumerator Wait(float waitTime)
+    {
         //tempWaitNumber = jimControl.anim.GetCurrentAnimatorClipInfo(0).Length;
         
         //print("current clip length: " + jimControl.anim.GetCurrentAnimatorClipInfo(0).Length);

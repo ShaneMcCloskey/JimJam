@@ -2,19 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class textTyper : MonoBehaviour {
-
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
+public class textTyper : MonoBehaviour
+{
 	/*public static void TypeText(GameObject textElementObject, string text, float time){
 		//print ("typing without sound");
 		//float characterDelay = time / text.Length;	//time to type whole sentence
@@ -24,7 +13,8 @@ public class textTyper : MonoBehaviour {
 		textElement.StartCoroutine (SetText (textElementObject, text, characterDelay));
 	}*/
 
-	public static void TypeText(GameObject textElementObject, string text, float time, AudioClip typeSound){
+	public static void TypeText(GameObject textElementObject, string text, float time, AudioClip typeSound)
+    {
 		//print ("typing WITH sound");
 		float characterDelay = time;
 		Text textElement = textElementObject.GetComponent<Text> ();
@@ -42,14 +32,16 @@ public class textTyper : MonoBehaviour {
 		}
 	}*/
 
-	static IEnumerator SetText(GameObject textElementObject, string text, float characterDelay,  AudioClip typeSound){
+	static IEnumerator SetText(GameObject textElementObject, string text, float characterDelay,  AudioClip typeSound)
+    {
 		Text textElement = textElementObject.GetComponent<Text> ();
 		AudioSource audioMain = textElementObject.GetComponent<AudioSource>();
 		audioMain.clip = typeSound;
         textElement.text = " ";
         yield return new WaitForSeconds(0.15f);
         textElement.text = " ";
-        for (int i = 0; i < text.Length; i++) {
+        for (int i = 0; i < text.Length; i++)
+        {
 			textElement.text += text [i];
             if (i % 2 == 0)//is even
             {

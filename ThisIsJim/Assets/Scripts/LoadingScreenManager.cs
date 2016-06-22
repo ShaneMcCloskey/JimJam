@@ -11,8 +11,8 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class LoadingScreenManager : MonoBehaviour {
-
+public class LoadingScreenManager : MonoBehaviour
+{
 	[Header("Loading Visuals")]
 	public Image loadingIcon;
 	public Image loadingDoneIcon;
@@ -39,13 +39,15 @@ public class LoadingScreenManager : MonoBehaviour {
 	// IMPORTANT! This is the build index of your loading scene. You need to change this to match your actual scene index
 	static int loadingSceneIndex = 2;
 
-	public static void LoadScene(int levelNum) {				
+	public static void LoadScene(int levelNum)
+    {				
 		Application.backgroundLoadingPriority = ThreadPriority.High;
 		sceneToLoad = levelNum;
 		SceneManager.LoadScene(loadingSceneIndex);
 	}
 
-	void Start() {
+	void Start()
+    {
 		if (sceneToLoad < 0)
 			return;
 
@@ -54,7 +56,8 @@ public class LoadingScreenManager : MonoBehaviour {
 		StartCoroutine(LoadAsync(sceneToLoad));
 	}
 
-	private IEnumerator LoadAsync(int levelNum) {
+	private IEnumerator LoadAsync(int levelNum)
+    {
 		ShowLoadingVisuals();
 
 		yield return null; 
@@ -65,10 +68,12 @@ public class LoadingScreenManager : MonoBehaviour {
 		float lastProgress = 0f;
 
 		// operation does not auto-activate scene, so it's stuck at 0.9
-		while (DoneLoading() == false) {
+		while (DoneLoading() == false)
+        {
 			yield return null;
 
-			if (Mathf.Approximately(operation.progress, lastProgress) == false) {
+			if (Mathf.Approximately(operation.progress, lastProgress) == false)
+            {
 				progressBar.fillAmount = operation.progress;
 				lastProgress = operation.progress;
 			}
@@ -91,7 +96,8 @@ public class LoadingScreenManager : MonoBehaviour {
 			operation.allowSceneActivation = true;
 	}
 
-	private void StartOperation(int levelNum) {
+	private void StartOperation(int levelNum)
+    {
 		Application.backgroundLoadingPriority = loadThreadPriority;
 		operation = SceneManager.LoadSceneAsync(levelNum, loadSceneMode);
 
@@ -100,19 +106,23 @@ public class LoadingScreenManager : MonoBehaviour {
 			operation.allowSceneActivation = false;
 	}
 
-	private bool DoneLoading() {
+	private bool DoneLoading()
+    {
 		return (loadSceneMode == LoadSceneMode.Additive && operation.isDone) || (loadSceneMode == LoadSceneMode.Single && operation.progress >= 0.9f); 
 	}
 
-	void FadeIn() {
+	void FadeIn()
+    {
 		fadeOverlay.CrossFadeAlpha(0, fadeDuration, true);
 	}
 
-	void FadeOut() {
+	void FadeOut()
+    {
 		fadeOverlay.CrossFadeAlpha(1, fadeDuration, true);
 	}
 
-	void ShowLoadingVisuals() {
+	void ShowLoadingVisuals()
+    {
 		loadingIcon.gameObject.SetActive(true);
 		loadingDoneIcon.gameObject.SetActive(false);
 
@@ -120,12 +130,12 @@ public class LoadingScreenManager : MonoBehaviour {
 		loadingText.text = "LOADING...";
 	}
 
-	void ShowCompletionVisuals() {
+	void ShowCompletionVisuals()
+    {
 		loadingIcon.gameObject.SetActive(false);
 		loadingDoneIcon.gameObject.SetActive(true);
 
 		progressBar.fillAmount = 1f;
 		loadingText.text = "LOADING DONE";
 	}
-
 }

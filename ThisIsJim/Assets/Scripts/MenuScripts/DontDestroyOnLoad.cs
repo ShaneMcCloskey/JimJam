@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DontDestroyOnLoad : MonoBehaviour {
-
+public class DontDestroyOnLoad : MonoBehaviour
+{
 	public void Awake()
 	{
 		DontDestroyOnLoad(this);
@@ -11,15 +11,5 @@ public class DontDestroyOnLoad : MonoBehaviour {
 		{
 			Destroy(gameObject);
 		}
-	}
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

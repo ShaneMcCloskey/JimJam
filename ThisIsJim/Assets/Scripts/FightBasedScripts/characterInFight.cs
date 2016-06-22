@@ -1,27 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class characterInFight : MonoBehaviour {
-
+public class characterInFight : MonoBehaviour
+{
     public fightManager fManager;
     public bool offsetAnimation = false;
     public float animOffset = 0.5f;
     Animator anim; 
 
 	// Use this for initialization
-	void Start () {
-
+	void Start ()
+    {
         anim = transform.GetComponent<Animator>();
         if (offsetAnimation)
         {
             StartCoroutine(offsetAnim());
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     void OnTriggerEnter(Collider other)
     {

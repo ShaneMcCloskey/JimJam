@@ -2,8 +2,8 @@
 using System.Collections;
 using UnityEngine.Audio;
 
-public class audioManager : MonoBehaviour {
-
+public class audioManager : MonoBehaviour
+{
     public AudioMixer masterMixer;
     public AudioClip currentSong;
     public AudioSource[] SyncedClips;
@@ -23,9 +23,11 @@ public class audioManager : MonoBehaviour {
     public bool fadeDown = false;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         songAudioSource.clip = currentSong;
-        if (startSongAtRandomPoint == true) {
+        if (startSongAtRandomPoint == true)
+        {
             randomStartingTime = startingPoints[Random.Range(0, startingPoints.Length)];
             if (randomStartingTime > songLengthInSeconds)
             {
@@ -57,7 +59,8 @@ public class audioManager : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if (memoryLoaded == false)
         {
             if (Time.timeScale <= 0.1f)
@@ -89,7 +92,8 @@ public class audioManager : MonoBehaviour {
        //print("FadeUp");
         float t = fadeInTime;
         float elapsedT = 0.0f;
-        while (elapsedT < t && !fadeDown){
+        while (elapsedT < t && !fadeDown)
+        {
            songAudioSource.volume = Mathf.Lerp(0.0f, 1.0f, (elapsedT/t));
             elapsedT += Time.deltaTime;
             yield return new WaitForEndOfFrame();

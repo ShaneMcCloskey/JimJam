@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class autoDestruct : MonoBehaviour {
-
+public class autoDestruct : MonoBehaviour
+{
     public float timeToDestruct = 5.0f; //seconds to destruct
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         StartCoroutine(Destruct());
     }
-	
 	
     IEnumerator Destruct()
     {

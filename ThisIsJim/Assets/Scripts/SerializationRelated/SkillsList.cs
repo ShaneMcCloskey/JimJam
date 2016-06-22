@@ -2,16 +2,16 @@
 using System.Collections;
 using System.Collections.Generic; //if using lists
 
-public class SkillsList : MonoBehaviour {
-
+public class SkillsList : MonoBehaviour
+{
     public savedInfo savedInformation;
     public List<int> equippedSkills = new List<int>(4);       //equippedSkills
     public List<Skill> skillsInGame = new List<Skill>();      //list of every skill
     public List<bool> unlockedSkills = new List<bool>();      //skills, and if they're unlocked
     
-
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         //StartCoroutine(LoadSavedInfo());
         equippedSkills = savedInformation.equippedSkills;
         if (savedInformation.unlockedSkills.Count < 2)
@@ -27,14 +27,14 @@ public class SkillsList : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         //equippedSkills.Sort(delegate (int a, int b) { return a.CompareTo(b); });
         //UpdateSavedInfo();
     }
 
     public void UpdateSavedInfo()
     {
-
         savedInformation.equippedSkills = equippedSkills;
         savedInformation.unlockedSkills = unlockedSkills;
     }
@@ -68,9 +68,6 @@ public class SkillsList : MonoBehaviour {
                     }
                 }
             }
-
-
-
             for (int i = 0; i < equippedSkills.Count; i++) {
 
                 if (skillEquipped == false) //skill wasn't already equipped

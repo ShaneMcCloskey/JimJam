@@ -6,14 +6,13 @@ using System.IO;
 using System.Collections.Generic; //if using lists
 using UnityEngine.UI;
 
-public class savedInfo : MonoBehaviour {
-
+public class savedInfo : MonoBehaviour
+{
     public int dayCount = 0;
     public int walletAmount = 100;
     public int memoriesExperienced = 0;
     public int memoriesToEndDay = 1; //NOT serialized
     public int lastMemoryExperienced = 0;
-
 
     public List<int> initialEquippedSkills = new List<int>(4);       //designer-set
     public List<bool> initialUnlockedSkills = new List<bool>();      //first 2 should always be unlocked, first doesn't matter
@@ -24,15 +23,11 @@ public class savedInfo : MonoBehaviour {
     public bool[] memoryExperienced = new bool[14];
 
     // Use this for initialization
-    void Awake () {
+    void Awake ()
+    {
         savedInfo.SetEnvironmentVariables();
         Load();
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public void Save()
     {
@@ -108,7 +103,6 @@ public class savedInfo : MonoBehaviour {
             file.Close();
         }
     }
-
 
     private static void SetEnvironmentVariables()
     {

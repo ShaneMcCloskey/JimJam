@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class eventTrigger : MonoBehaviour {
+public class eventTrigger : MonoBehaviour
+{
 
     //right now this is going to end the demo
 
@@ -23,7 +24,8 @@ public class eventTrigger : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         uiBlackFade.enabled = false;
         savedGame = GameObject.FindWithTag("SerializedMain").GetComponent<savedInfo>();
         if (savedGame.memoriesExperienced >= savedGame.memoriesToEndDay)    //checks if enough memories are ready in the start so that it doesn't get conflicted with later additive levels
@@ -33,11 +35,12 @@ public class eventTrigger : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-	    if (dayOver && !ending) {
+	void Update ()
+    {
+	    if (dayOver && !ending)
+        {
            StartCoroutine(EndDemo());
         }
-
 	}
 
     public IEnumerator EndDemo()

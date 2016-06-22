@@ -4,8 +4,8 @@ using System.Collections.Generic; //if using lists
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class memoryManager : MonoBehaviour {
-
+public class memoryManager : MonoBehaviour 
+{
     public savedInfo saveInfo;
 
     public Skill[] skillToScene = new Skill[14];
@@ -24,10 +24,10 @@ public class memoryManager : MonoBehaviour {
     public audioManager audioManagement;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         skillGainSlot.gameObject.SetActive(false);
         StartCoroutine(LoadInfo());
-        
 	}
 
    public IEnumerator LoadInfo() //only run by start function
@@ -71,11 +71,6 @@ public class memoryManager : MonoBehaviour {
         }
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public void LoadMemory (int memoryToLoad)
     {

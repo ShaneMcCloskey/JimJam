@@ -3,22 +3,17 @@ using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
 
-public class animEventScript : MonoBehaviour {
-
+public class animEventScript : MonoBehaviour
+{
     public AudioSource audio1;
     public cameraShake camShake;
     //public AudioSource[] audioClips;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         audio1 = transform.GetComponent<AudioSource>();
-
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public void PrintEvent (int num)
     {

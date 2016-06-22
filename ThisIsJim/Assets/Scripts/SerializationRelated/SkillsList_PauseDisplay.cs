@@ -4,8 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic; //if using lists
 
 public class SkillsList_PauseDisplay : MonoBehaviour
-{
-
+{ 
     //Variables that must be assigned
     public SkillsList skillsList;
     public List<Text> skillTitleSlots = new List<Text>(4);

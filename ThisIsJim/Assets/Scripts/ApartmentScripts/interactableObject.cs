@@ -7,8 +7,8 @@ using UnityEngine.Audio;
 
 //these will need to cue up memories (scenes), later
 
-public class interactableObject : MonoBehaviour {
-
+public class interactableObject : MonoBehaviour
+{
     public memoryManager mmryManager;
 	public Animator anim;
 	public AudioClip hoverSound;
@@ -39,7 +39,8 @@ public class interactableObject : MonoBehaviour {
     bool typingObject = false;
 
 	// Use this for initialization
-	void Awake() {
+	void Awake()
+    {
         mmryManager = GameObject.FindGameObjectWithTag("MemoryManager").GetComponent<memoryManager>();
         anim = transform.GetComponent <Animator>();
 		//narratorBox = GameObject.FindGameObjectWithTag ("TextBox");
@@ -53,10 +54,6 @@ public class interactableObject : MonoBehaviour {
 		camScript = camM.gameObject.GetComponent<cameraMain> ();
         narratorBoxText = narratorBox.GetComponent<Text>();
         audioSrc.volume = notHoveringVolume;
-
-        
-      
-
     }
 
     void Start()
@@ -81,18 +78,15 @@ public class interactableObject : MonoBehaviour {
         }
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
     public bool fadingUp = false;
-	public void OnMouseOver(){
+	public void OnMouseOver()
+    {
 		//print (gameObject.name);
-		if (anim != null) {
+		if (anim != null)
+        {
 			anim.SetBool ("Hover", true);
-			if (hoverSound != null) {
+			if (hoverSound != null)
+            {
 				audioSrc.clip = hoverSound;
                 if (!audioSrc.isPlaying)
                 {
@@ -108,8 +102,10 @@ public class interactableObject : MonoBehaviour {
 		}
 	}
 
-	public  void OnMouseExit(){
-		if (anim != null) {
+	public  void OnMouseExit()
+    {
+		if (anim != null)
+        {
 			anim.SetBool ("Hover", false);
             //audio.loop = false;
             //audio.volume = 0.4f;
@@ -136,7 +132,8 @@ public class interactableObject : MonoBehaviour {
         yield return new WaitForSeconds(0.1f);
     }
 
-	public void typePrompt (){
+	public void typePrompt ()
+    {
         if (!typingObject)
         {
             player.graphicHolder.flipX = jimFacesLeft; //Orients jim 
@@ -167,14 +164,16 @@ public class interactableObject : MonoBehaviour {
         typingObject = false;
     }
 
-	public void Answer(bool answer){
+	public void Answer(bool answer)
+    {
         typingObject = false;
         if (answer == true)
         { //memoryScenes[0] != null
           // SceneManager.LoadScene(memoryScenes[0], LoadSceneMode.Additive);
             mmryManager.LoadMemory(memorySceneList[Random.Range(0, memorySceneList.Count)]);
         }
-        else{
+        else
+        {
             player.clickToMoveEnabled = true;
             camScript.UnFramePlayerAndObject();
             narratorBoxText.text = ""; //BUG FIX?
@@ -193,7 +192,8 @@ public class interactableObject : MonoBehaviour {
         Answer(false);
     }
 
-	public void sentientInteraction (){
+	public void sentientInteraction ()
+    {
         //sentientSentences [Random.Range (0, sentientSentences.Length)];
         if (!typingObject)
         {

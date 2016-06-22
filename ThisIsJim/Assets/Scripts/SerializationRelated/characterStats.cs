@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class characterStats : MonoBehaviour {
-
+public class characterStats : MonoBehaviour
+{
 	//The stats will be ATK (Attack), DEF (Defense), SPD (Speed), MOD (Mood),
 	//MRY (Memory), LCK (Luck), HP (Health Points), and MP (Memory Points).
 
@@ -36,10 +36,10 @@ public class characterStats : MonoBehaviour {
 
     //not serialized at all
     public int timesMissed = 0;
-	 
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		//if no save data, set all these base stats
 		baseAttack = attack;
 		baseDefense = defense;
@@ -49,38 +49,35 @@ public class characterStats : MonoBehaviour {
 		baseHP = healthPoints;
 
 		moodUpdate (mood);
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	 
 	}
 
-	void moodUpdate(moodState newMood){
+	void moodUpdate(moodState newMood)
+    {
 		mood = newMood;
-		if (newMood == moodState.Nuetral) {
+		if (newMood == moodState.Nuetral)
+        {
 
 		}
-		if (newMood == moodState.Anger) { // Anger - 50-60% chance to ignore, increased attack strength
+		if (newMood == moodState.Anger)
+        { // Anger - 50-60% chance to ignore, increased attack strength
 			obedience = (100.0f - 55.0f);
 			attack = (baseAttack + (baseAttack *0.1f));
 		}
-		if (newMood == moodState.Sadness) { // Sadness - 40% chance to ignore, decreased attack, increased defense
+		if (newMood == moodState.Sadness)
+        { // Sadness - 40% chance to ignore, decreased attack, increased defense
 			obedience = (100.0f - 40.0f);
 			attack = (baseAttack - (baseAttack *0.1f));
 			defense = (baseDefense + (baseDefense *0.1f));
 		}
-		if (newMood == moodState.Overjoy) { // Overjoy - 40% chance to ignore, increased chance to miss, 40% chance to hit twice
+		if (newMood == moodState.Overjoy)
+        { // Overjoy - 40% chance to ignore, increased chance to miss, 40% chance to hit twice
 			obedience = (100.0f - 40.0f);
 			//going to come back for the hit twice
 		}
-		if (newMood == moodState.Fear) { // Fear - 70% chance to ignore, defense way up
+		if (newMood == moodState.Fear)
+        { // Fear - 70% chance to ignore, defense way up
 			obedience = (100.0f - 70.0f);
 			defense = (baseDefense + (baseDefense *0.25f));
 		}
 	}
-
-    
- 
 }

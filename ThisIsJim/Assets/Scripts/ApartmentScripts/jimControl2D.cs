@@ -15,8 +15,8 @@ using UnityEngine.UI;
 
  */
 
-public class jimControl2D : MonoBehaviour {
-
+public class jimControl2D : MonoBehaviour
+{
 	//MOVEMENT Variables:
 	public NavMeshAgent agent;
 	public Animator anim;
@@ -45,11 +45,9 @@ public class jimControl2D : MonoBehaviour {
 	Vector3 currentDestination = Vector3.zero;
 	float storedSpeed;
 
-	void Awake (){
-	}
-
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		agent = GetComponent<NavMeshAgent>();
 		jimIdles = GetComponent<jimSentientIdles> ();
 		interactableObjects = GameObject.FindGameObjectsWithTag("Interactable");
@@ -60,7 +58,8 @@ public class jimControl2D : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		transform.Translate(0f, 0f, 0f); //should activate collision check every frame, when not moving
 		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
@@ -72,7 +71,8 @@ public class jimControl2D : MonoBehaviour {
             jimIsBusy = false;
             trackingToObject = false; //resets
 			//clickToMoveEnabled = false; //this will freeze jim if he clicks outside of the apt scene
-			if (Physics.Raycast(ray, out hit, 100)) {
+			if (Physics.Raycast(ray, out hit, 100))
+            {
 				agent.destination = hit.point;
                 StartCoroutine(Wait(0.45f, true));
             }
@@ -103,48 +103,58 @@ public class jimControl2D : MonoBehaviour {
 		}
 
 		//HOVER
-		if (Physics.Raycast(ray, out hit, 100)){
+		if (Physics.Raycast(ray, out hit, 100))
+        {
 			//if (hit.collider.gameObject.tag == "Interactable") {
 			//	hit.collider.gameObject.SendMessage ("Hover");
 			//}
 		}
 
 		//INACTIVE JIM
-		if (Input.anyKeyDown || jimIsBusy == true) {
+		if (Input.anyKeyDown || jimIsBusy == true)
+        {
 			inactiveTimer = 0.0f;
-		} else {
+		}
+        else
+        {
 			inactiveTimer += 1.0f * Time.deltaTime; 
 		}
 
-		if (clickToMoveEnabled == false) {
+		if (clickToMoveEnabled == false)
+        {
 			inactiveTimer = 0.0f;
 		}
 
-        if (inactiveTimer >= inactiveTimerLimit) {
+        if (inactiveTimer >= inactiveTimerLimit)
+        {
 			inactiveTimer = 0.0f;
 			RandomSuggestion ();
 		}
 
-
-
 		//print ("Speed: " + agent.desiredVelocity);
 		//MOVEMENT:
 		
-		if (agent.desiredVelocity != Vector3.zero) {
+		if (agent.desiredVelocity != Vector3.zero)
+        {
 			anim.SetBool ("walking", true);
 		}
-		if (agent.desiredVelocity == Vector3.zero) {
+		if (agent.desiredVelocity == Vector3.zero)
+        {
 			anim.SetBool ("walking", false);
 		}
-		if (agent.desiredVelocity.x < -1.0f) {
+		if (agent.desiredVelocity.x < -1.0f)
+        {
 			graphicHolder.flipX = true; //print ("left");
 		} 
-		if (agent.desiredVelocity.x > 1.0f) {
+		if (agent.desiredVelocity.x > 1.0f)
+        {
 			graphicHolder.flipX = false; //print ("right");
 		}
 
-}
-	IEnumerator Blink(){
+    }
+
+	IEnumerator Blink()
+    {
 		agent.speed = (storedSpeed / 1000.0f);
 		anim.SetTrigger ("blink");
 		yield return new WaitForSeconds (0.2f);
@@ -153,7 +163,8 @@ public class jimControl2D : MonoBehaviour {
 		agent.speed = storedSpeed;
 	}
 
-	IEnumerator moveToObject(Collider other){
+	IEnumerator moveToObject(Collider other)
+    {
 		trackingToObject = true;
 		interactableObject iObject = other.GetComponent<interactableObject>();
         if (iObject.anim)
@@ -163,12 +174,14 @@ public class jimControl2D : MonoBehaviour {
 		agent.destination = iObject.pointOfInterest.position;
 		//not at object yet, but still tracking
 		while (agent.transform.position.x != iObject.pointOfInterest.position.x && 
-			agent.transform.position.z != iObject.pointOfInterest.position.z && trackingToObject == true) {
+			agent.transform.position.z != iObject.pointOfInterest.position.z && trackingToObject == true)
+        {
 			print ("tracking to object");
 			yield return null;
 		}
 		//at object and still tracking
-		if (trackingToObject == true) {
+		if (trackingToObject == true)
+        {
             clickToMoveEnabled = false;
             iObject.typePrompt ();
             if (iObject.memoryScenes.Length > 0)
@@ -184,7 +197,8 @@ public class jimControl2D : MonoBehaviour {
 		}
 	
 		while (agent.transform.position.x == iObject.pointOfInterest.position.x &&
-		       agent.transform.position.z == iObject.pointOfInterest.position.z && trackingToObject == true) {
+		       agent.transform.position.z == iObject.pointOfInterest.position.z && trackingToObject == true)
+        {
 			yield return null;
 		}
 		print ("cancelled interaction");
@@ -198,50 +212,58 @@ public class jimControl2D : MonoBehaviour {
         StartCoroutine(Wait(0.25f, true));
     }
 
-
 	//RANDOM STUFF
 
-	void RandomSuggestion (){
+	void RandomSuggestion ()
+    {
         jimSentient = true;
         narratorBox.SetActive(false);
         jimIsBusy = true;
         //Jim should be able to randomly decide between doing an Idle, Interact with a random object, and move somewhere
         inactiveTimerLimit = Random.Range (inactiveTimerMinMax.x, inactiveTimerMinMax.y);
 		int suggest = Random.Range(0,100);
-		if (suggest <= 70) {
+		if (suggest <= 70)
+        {
             //jimIdles.RandomIdle();
            // StartCoroutine(RandomIdle());
             StartCoroutine(RandomInteraction());
             StartCoroutine(Wait(0.1f, true));
         }
-		if (suggest > 70) {
+		if (suggest > 70)
+        {
             //RandomInteraction();
             //StartCoroutine(RandomInteraction());
             StartCoroutine(RandomIdle());
             StartCoroutine(Wait(0.5f, true));
         }
-		if (suggest > 500) {
+		if (suggest > 500)
+        {
             StartCoroutine(RandomMove());
 
             StartCoroutine(Wait(0.75f, true));
         }
 	}
 
-	IEnumerator RandomInteraction (){
+	IEnumerator RandomInteraction ()
+    {
 		int objectNumber = Random.Range (0, interactableObjects.Length);
 		interactableObject objectScript;
         print("Interact with " + interactableObjects[objectNumber].name);
-		if (interactableObjects [objectNumber].GetComponent<interactableObject> () != null) {
+		if (interactableObjects [objectNumber].GetComponent<interactableObject> () != null)
+        {
 			objectScript = interactableObjects [objectNumber].GetComponent<interactableObject> ();
 			agent.SetDestination (objectScript.pointOfInterest.position);
-			while (agent.transform.position.x != objectScript.pointOfInterest.position.x && agent.transform.position.z != objectScript.pointOfInterest.position.z) {
+			while (agent.transform.position.x != objectScript.pointOfInterest.position.x && agent.transform.position.z != objectScript.pointOfInterest.position.z)
+            {
 				//print ("stuck");
 				yield return null;
 			}
 			//print ("find random item");
 			narratorBox.SetActive (true);
 			objectScript.sentientInteraction ();
-		} else {
+		}
+        else
+        {
 			print ("no interactableObject script found on: " + interactableObjects [objectNumber].name);
 		}
 		yield return new WaitForSeconds (4.5f);
@@ -254,7 +276,8 @@ public class jimControl2D : MonoBehaviour {
         int objectNumber = Random.Range(0, idlePointsOfInterest.Length);
         agent.SetDestination(idlePointsOfInterest[objectNumber].transform.position);
         Vector3 pointOfInterest = idlePointsOfInterest[objectNumber].transform.position;
-        while (agent.transform.position.x != pointOfInterest.x && agent.transform.position.z != pointOfInterest.z) {
+        while (agent.transform.position.x != pointOfInterest.x && agent.transform.position.z != pointOfInterest.z)
+        {
             //print ("stuck");
             yield return null;
         }
@@ -265,7 +288,8 @@ public class jimControl2D : MonoBehaviour {
         jimIsBusy = false;
     }
 
-    public IEnumerator RandomMove(){
+    public IEnumerator RandomMove()
+    {
 		Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
 		randomDirection += transform.position;
 		NavMeshHit hit;
@@ -278,10 +302,10 @@ public class jimControl2D : MonoBehaviour {
         //return null;
     }
 
-	IEnumerator Wait(float waitTime, bool active){
+	IEnumerator Wait(float waitTime, bool active)
+    {
         //print("waiting");
 		yield return new WaitForSeconds (waitTime);
         clickToMoveEnabled = active;
     }
- 
 }

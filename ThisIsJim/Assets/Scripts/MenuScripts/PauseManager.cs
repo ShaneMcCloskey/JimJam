@@ -7,29 +7,28 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 #endif
 
-public class PauseManager : MonoBehaviour {
-
+public class PauseManager : MonoBehaviour
+{
 	public AudioMixerSnapshot paused;
 	public AudioMixerSnapshot unpaused;
 	public float pauseTimeScale = 0.001f;
 	public bool inGame = true; 
 	//Canvas canvas;
 	public GameObject pauseDisplay;
-
-	// Use this for initialization
-	void Start () {
-		//canvas = GetComponent<Canvas> ();
-	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetButtonDown ("Pause")) {
+	void Update ()
+    {
+		if (Input.GetButtonDown ("Pause"))
+        {
 			Pause ();
 		}
 	}
 
-	public void Pause (){
-		if (inGame) {
+	public void Pause ()
+    {
+		if (inGame)
+        {
 			//canvas.enabled = !canvas.enabled;
 			pauseDisplay.SetActive(!pauseDisplay.activeSelf);
 			Time.timeScale = Time.timeScale == pauseTimeScale ? 1 : pauseTimeScale;
@@ -37,19 +36,27 @@ public class PauseManager : MonoBehaviour {
 		}
 	}
 
-	void Lowpass(){
-		if (Time.timeScale == pauseTimeScale) {
+	void Lowpass()
+    {
+		if (Time.timeScale == pauseTimeScale)
+        {
 			paused.TransitionTo (.01f);
-		} else {
+		}
+        else
+        {
 			unpaused.TransitionTo (.01f);
 		}
 	}
 
-	void OnLevelWasLoaded(int level) {
+	void OnLevelWasLoaded(int level)
+    {
         Scene currentScene = SceneManager.GetActiveScene();
-		if (currentScene.name != "MainMenu") {
+		if (currentScene.name != "MainMenu")
+        {
 			inGame = true;
-		} else {
+		}
+        else
+        {
 			inGame = false;
 			Time.timeScale = 1;
 			pauseDisplay.SetActive(false);
@@ -58,13 +65,15 @@ public class PauseManager : MonoBehaviour {
 		}
 	}
 
-	public void LoadLevel (string levelToLoad){
+	public void LoadLevel (string levelToLoad)
+    {
 		Time.timeScale = 1;
 		//Application.LoadLevel (levelToLoad);
         SceneManager.LoadScene(levelToLoad);
 	}
 
-	public void Quit (){
+	public void Quit ()
+    {
 		#if UNITY_EDITOR
 		EditorApplication.isPlaying = false;
 		#else
@@ -72,7 +81,8 @@ public class PauseManager : MonoBehaviour {
 		#endif
 	}
 
-	public void FullScreen (){
+	public void FullScreen ()
+    {
 		Screen.fullScreen = !Screen.fullScreen;
 	}
 }

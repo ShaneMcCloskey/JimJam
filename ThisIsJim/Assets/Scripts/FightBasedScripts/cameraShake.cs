@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class cameraShake : MonoBehaviour {
+public class cameraShake : MonoBehaviour
+{
     public float magnitude = 0.5f;
     public float duration = 0.25f;
     public Camera mainCamera;
@@ -75,8 +76,6 @@ public class cameraShake : MonoBehaviour {
 
             yield return null;
         }
-
         mainCamera.transform.position = originalCamPos;
     }
-
 }

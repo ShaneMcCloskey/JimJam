@@ -1,19 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class fightManagerSkills : MonoBehaviour {
-
+public class fightManagerSkills : MonoBehaviour
+{
     public SkillsList skillsList;
     fightManager fManager;
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         fManager = transform.GetComponent<fightManager>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
     public void PlayerSkill(int skillNumber, characterStats attacker, characterStats defender)

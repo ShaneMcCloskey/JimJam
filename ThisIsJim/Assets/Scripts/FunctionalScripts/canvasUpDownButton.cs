@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class canvasUpDownButton : MonoBehaviour {
+public class canvasUpDownButton : MonoBehaviour
+{
     //Script is meant to be an alternate way of scrooling through a masked UI window
     //Attached to content and referenced by UI.Button to run increment function
 
@@ -10,16 +11,6 @@ public class canvasUpDownButton : MonoBehaviour {
     public Vector2 minMaxPosition;
     //public float increment = 10.0f;
     bool moving = false;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public void Increment(float incrementValue)
     {

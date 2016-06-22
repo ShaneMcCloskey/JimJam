@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RisingText : MonoBehaviour {
-
+public class RisingText : MonoBehaviour
+{
     public float duration = 1.5f;
     public float speed = 1.5f;
     public float fadeSpeed = 0.5f;
@@ -31,14 +31,16 @@ public class RisingText : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         cam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
         textMesh = GetComponent<TextMesh>();
         delta = new Vector3(0f, 0f, speed);
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         transform.Translate(delta * Time.deltaTime, Space.World);
         alpha -= Time.deltaTime * fadeSpeed;
         //textMesh.color = new Color(color.r, color.g, color.b, alpha);
