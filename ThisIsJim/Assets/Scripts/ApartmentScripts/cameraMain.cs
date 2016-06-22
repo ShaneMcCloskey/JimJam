@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class cameraMain : MonoBehaviour {
-
+public class cameraMain : MonoBehaviour
+{
 	public Transform target;
 	public Vector3 targetPos;
 	public Vector2 xMinMax = new Vector2 (-5, 5);
@@ -20,18 +20,24 @@ public class cameraMain : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
-		if (target == null) {
+	void Start ()
+    {
+		if (target == null)
+        {
 			target = GameObject.FindGameObjectWithTag ("Player").transform;
 		}
 		cam = gameObject.GetComponent<Camera> ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (zoomedIn == false) {
+	void Update ()
+    {
+		if (zoomedIn == false)
+        {
 			targetPos = target.position;
-		} else {
+		}
+        else
+        {
 			targetPos = ((target.position - target2.position)/2);
 		}
 		float destinationSize = Mathf.Lerp (cam.orthographicSize, targetCamSize, Time.deltaTime * camZoomSpeed);
@@ -47,14 +53,16 @@ public class cameraMain : MonoBehaviour {
 		transform.position = new Vector3 (finalPosition.x, transform.position.y, finalPosition.z);
 	}
 
-	public void FramePlayerAndObject (GameObject item){
+	public void FramePlayerAndObject (GameObject item)
+    {
 		target2 = item.transform;
 		//cam.orthographicSize = cameraZoomSize;
 		targetCamSize = cameraZoomSize;
 		zoomedIn = true;
 	}
 
-	public void UnFramePlayerAndObject (){
+	public void UnFramePlayerAndObject ()
+    {
 		//cam.orthographicSize = defaultCamSize;
 		targetCamSize = defaultCamSize;
 		zoomedIn = false;
